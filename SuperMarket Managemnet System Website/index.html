@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigMart - Home</title>
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/9ad10679c4.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>ALL_</span>IN_ONE</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#deal">Deal Of The Day</a>
+        <a href="about1.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fa fa-magnifying-glass" id="search-btn"></i>
+        <i class="fa fa-user" id="login-btn"></i>
+        <a href="cart.html"><i class="fa fa-cart-shopping"></i></a>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fa fa-magnifying-glass"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>don't have account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<!-- carousel -->
+<section class="carousel">
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\img1.jpg">
+          <div class="text">Fresh Fruits and Vegetables</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\img2.jpg">
+          <div class="text">All Grocery Products Available</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\img3.jpg">
+          <div class="text">High Class Utensils</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\img4.jpg">
+            <div class="text">Stationeries Available</div>
+        </div>
+    </div>
+    <div class="all-dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+</section>
+
+<!-- our categories -->
+<section class="categories">
+    <h1>Categories</h1>
+
+    <div class="categories-boxs">
+        <div class="category">
+            <a href="fruits_page.html">
+                <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\fruits-logo.jpg" alt="">
+                <h4>Fruits</h4>
+            </a>
+        </div>
+        <div class="category">
+            <a href="vegetables_page.html">
+                <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\vegetables-logo.jpg" alt="">
+                <h4>Vegetables</h4>
+            </a>
+        </div>
+        <div class="category">
+            <a href="groceries_page.html">
+                <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\grocery-logo.jpg" alt="">
+                <h4>Groceries</h4>
+            </a>
+        </div>
+        <div class="category">
+            <a href="household_page.html">
+                <img src="images/utensils-logo-removebg-preview.png" alt="">
+                <h4>Household</h4>
+            </a>
+        </div>
+        <div class="category">
+            <a href="stationery_page.html">
+                <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\book-logo-removebg-preview.png" alt="">
+                <h4>Stationeries</h4>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- deal -->
+<section class="deal" id="deal">
+
+    <div class="content">
+
+        <h3 class="title">deal of the day</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam possimus voluptates commodi laudantium! Doloribus sint voluptatibus quaerat sequi suscipit nulla?</p>
+
+        <div class="count-down">
+            <div class="box">
+                <h3 id="day">00</h3>
+                <span>day</span>
+            </div>
+            <div class="box">
+                <h3 id="hour">00</h3>
+                <span>hour</span>
+            </div>
+            <div class="box">
+                <h3 id="minute">00</h3>
+                <span>minute</span>
+            </div>
+            <div class="box">
+                <h3 id="second">00</h3>
+                <span>second</span>
+            </div>
+        </div>
+
+        <a href="#" class="btn">check the deal</a>
+    </div>
+</section>
+
+<!-- our features -->
+<section class="features-list">
+    <h1>Our Features</h1>
+
+    <div class="feature-boxs">
+        <div class="fe-box">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\delivery-removebg-preview.png" alt="">
+            <h6>Free Delivery</h6>
+        </div>
+        <div class="fe-box">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\online.jpg" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\money.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\payment-removebg-preview.png" alt="">
+            <h6>Secure Payment</h6>
+        </div>
+        <div class="fe-box">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\returns.jpg" alt="">
+            <h6>Easy Returns</h6>
+        </div>
+        <div class="fe-box">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\support.jpg" alt="">
+            <h6>24/7 Service</h6>
+        </div>
+    </div>
+</section>
+
+
+<!-- customer -->
+<section class="customer">
+    <h1>What Our Customer Say</h1>
+
+    <div class="wrapper">
+        <div class="customer-box">
+            <img src="images/woman1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime in qui deleniti id dicta, velit aspernatur labore quos officia doloribus.</p>
+            <h3>A Girl</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+        <div class="customer-box">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\man1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime in qui deleniti id dicta, velit aspernatur labore quos officia doloribus.</p>
+            <h3>A Boy</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+        <div class="customer-box">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\woman2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime in qui deleniti id dicta, velit aspernatur labore quos officia doloribus.</p>
+            <h3>A Girl</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+        <div class="customer-box">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\man2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime in qui deleniti id dicta, velit aspernatur labore quos officia doloribus.</p>
+            <h3>A Boy</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sponsor -->
+<div class="brands">
+    <h1>Our Sponsors</h1>
+    <div class="small-container">
+        <div class="b-row">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\Coca-Cola-logo.png" alt="">
+        </div>
+        <div class="b-row">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\philips-logo.jpg" alt="">
+        </div>
+        <div class="b-row">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\Kellogg's-Logo.png" alt="">
+        </div>
+        <div class="b-row">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\savlon-logo.png" alt="">
+        </div>
+        <div class="b-row">
+            <img src="C:\Users\pawar\Downloads\SuperMarket-Management-Website-main\images\maggi-logo-removebg-preview.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container-f">
+        <div class="row-f">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for Android and IOS mobile phone</p>
+                <div class="app-logo">
+                    <img src="pay/app.jpg">
+                    <img src="pay/play.jpg">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our purpose is to sustainably make the pleasure and benefits of dress accessible to many</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blog post</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://bit.ly/3RLZDqP">Facebook</a></li>
+                    <li><a href="https://twitter.com/i/flow/login">Twitter</a></li>
+                    <li><a href="https://bit.ly/3fNVkhi">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h1 class="credit">Created By <a href="#">Trupti Pawar,Sanjivani Yawalkar, Komal Saurkar</a> | All rights reserved</h1>
+    </div>
+</div>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>

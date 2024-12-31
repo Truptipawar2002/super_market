@@ -1,0 +1,485 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 10px;
+    background: orange;
+    color:#fff;
+    padding: 10px 5px;
+    border: 3px solid orange;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+.btn:hover{
+    background:rgba(255, 165, 0,.2);
+    color: orange;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:black;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 9%;
+  }
+  
+  header .logo {
+    font-size: 25px;
+    font-weight: bolder;
+    color: lightseagreen;
+    text-transform: uppercase;
+  }
+  
+  header .logo span {
+    color: orange;
+  }
+  
+  header .navbar a {
+    color:lightseagreen;
+    font-size: 20px;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  header .navbar a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: lightblue;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  header .navbar a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  header .icons i {
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  header .icons i:hover {
+    color: orange;
+  }
+  
+  header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px 30px;
+    background: #333;
+    border-top: 2px solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  
+  header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 10px;
+    text-transform: none;
+    color: #333;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+  
+  header .search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  
+  header .search-bar-container label:hover {
+    color: orange;
+  }
+  
+.login-form-container{
+    position: fixed;
+    top: -120%; 
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width:100%;
+    background:rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.login-form-container.active{
+    top:0;
+}
+  
+.login-form-container form{
+    margin: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background:#fff;
+    width: 500px;
+}
+  
+.login-form-container form h3{
+    font-size: 30px;
+    color:#444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+}
+  
+.login-form-container form .box{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color:#333;
+    margin: 10px 0;
+    border: 2px solid rgba(0,0,0,.3);
+    text-transform: none;
+}
+  
+.login-form-container form .box:focus{
+    border-color: orange;
+}
+  
+.login-form-container form #remember{
+    margin: 20px 0;
+}
+  
+.login-form-container form label{
+    font-size: 20px;
+}
+  
+.login-form-container form .btn{
+    display: block;
+    width:100%;
+}
+  
+.login-form-container form p{
+    padding: 10px 0;
+    font-size: 20px;
+    color:#666;
+}
+  
+.login-form-container form p a{
+    color: orange;
+}
+  
+.login-form-container form p a:hover{
+    color:#333;
+    text-decoration: underline;
+}
+  
+.login-form-container #form-close{
+    position: absolute;
+    top: 20px; 
+    right: 30px;
+    font-size: 40px;
+    color:#fff;
+    cursor: pointer;
+}
+  
+#menu-bar{
+    color:#fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: none;
+}
+  
+  
+  
+  /* media queries  */
+  
+@media (max-width:1200px){
+  
+    html{
+      font-size: 55%;
+    }
+  
+}
+  
+@media (max-width:1055px){
+  
+    header{
+      padding: 18px;
+    }
+  
+    header .navbar a{
+      font-size: 17px;
+      margin: 0 7px;
+    }
+  
+}
+  
+@media (max-width:790px){
+  
+    #menu-bar{
+      display: initial;
+    }
+  
+    header .navbar{
+      position: absolute;
+      top:100%; 
+      right:0; 
+      left: 0;
+      background: #333;
+      border-top: 2px solid rgba(255,255,255,.2);
+      padding: 10px 20px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  
+    header .navbar a{
+      display: block;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 10px 0;    
+      background:#222;
+    }
+  
+    .login-form-container form .box{
+      font-size: 15px;
+    }
+  
+    .login-form-container form p{
+      font-size: 18px;
+    }
+  
+    .login-form-container #form-close{
+      font-size: 40px;
+    }
+}
+  
+ /* fruits */
+.products-section{
+    padding: 100px 80px 50px 80px;
+    text-align: center;
+
+}
+
+.products-section h1{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.products-section .product img{
+    /* width: 250px; */
+    height: 250px;
+}
+
+.prod-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.products-section .product{
+    width: 30%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #a3deac;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 30px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 10px;
+    transition: 0.2s ease;
+}
+
+.products-section .product:hover{
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-10px);
+}
+
+.products-section .product img{
+    border-radius: 20px;
+}
+
+.products-section .product .des{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.products-section .product .des h5{
+    color: #1a1a1a;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.products-section .product .des .stars{
+    padding-bottom: 10px;
+}
+
+.products-section .product .des .stars i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+.products-section .product .des h4{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178;
+    padding-bottom: 10px;
+}
+
+.products-section .product .des h4 i{
+    font-size: 17px;
+    padding-right: 3px;
+}
+
+.products-section .product .cart-btn{
+    background-color: #e8f6ea;
+    border-radius: 20px;
+    padding: 15px 30px;
+    border: 1px solid #cce7d0;
+    font-size: 15px;
+}
+
+.products-section .product .cart-btn:hover{
+    background-color: #28c1cc;
+}
+
+@media (max-width:1400px) {
+    .products-section .product img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width:660px) {
+    .products-section .product{
+        width: 100%;
+    }
+}
+/* cart */
+.cart-section{
+    padding: 90px 80px 40px 80px;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 15px;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 20px;
+}
+
+/* shop */
+.discount h3{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid rgb(135, 117, 117);
+    border-radius: 20px;
+    background-color: lightgrey;
+}

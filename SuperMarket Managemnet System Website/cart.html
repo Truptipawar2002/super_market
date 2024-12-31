@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/9ad10679c4.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <a href="#" class="logo"><span>Big</span>Mart</a>
+    
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="index.html#deal">Deal Of The Day</a>
+            <a href="about1.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    
+        <div class="icons">
+            <i class="fa fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa fa-user" id="login-btn"></i>
+            <i class="fa fa-cart-shopping"></i>
+        </div>
+    
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fa fa-magnifying-glass"></label>
+        </form>
+    
+    </header>
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+    
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have account? <a href="#">register now</a></p>
+        </form>
+    
+    </div>
+
+
+    <!-- cart -->
+    <section class="cart-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn" type="button">PURCHASE</button>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
